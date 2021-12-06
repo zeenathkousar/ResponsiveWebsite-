@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Creating Coffee Beans Delivery Responsive Website using Flex</title>
+    <style>
+        body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(128 128 143);
+    position: fixed;
+
+
+    width: 100%;
+    height: 3rem;
+}
+
+.logo img {
+    height: 2rem;
+    width: 4rem;
+    border: 2px solid rgb(236, 107, 107);
+    border-radius: 50%;
+    margin: 0.5rem 2rem;
+
+}
+
+.navigation {
+    display: flex;
+
+}
+
+
+.navigation ul {
+    display: flex;
+
+    list-style: none;
+}
+
+.navigation input {
+    margin-left: 23rem;
+    width: 10rem;
+    height: 1rem;
+    margin-top: 1rem;
+}
+
+.navigation ul li a {
+    color: rgb(245, 7, 7);
+    text-decoration: none;
+    margin-left: 2.8vw;
+    cursor: pointer;
+    padding: 0rem 2vw;
+    font-weight: 1000;
+}
+
+.navigation ul li a:hover {
+    color: brown;
+    font-weight: 1200;
+    background-color: white;
+}
+
+body::before {
+    content: "";
+    background: url("baby.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 240vh;
+    width: 150vw;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: thistle; */
+    color: rgb(243, 9, 9);
+    height: 33rem;
+    padding: 2rem;
+}
+
+.container h2 {
+    font-size: 3rem;
+    font-family: serif sans-serif;
+}
+/* .container p{
+    font-size: 2vh;
+} */
+.container button {
+    background-color: brown;
+    color: burlywood;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 17px;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.container button:hover {
+    color: brown;
+    font-weight: 1000;
+    background-color: white;
+}
+
+.services {
+    color: brown;
+
+}
+
+.services h1 {
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.boxes {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.box {
+    border: 2px solid red;
+    border-radius: 12px;
+    width: 30%;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.box h2 {
+    text-align: center;
+}
+
+.contactUs {
+    top: 20px;
+    position: relative;
+    /* color: brown; */
+
+}
+
+.contactUs h1 {
+    text-align: center;
+    margin-top: 2rem;
+    color: brown;
+
+}
+
+#customersupport {
+    border: 2px solid black;
+    background-color: #e59d82;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+
+#customersupport h2 {
+    margin-bottom: 4px;
+    border-bottom: 2px solid black;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: cornsilk;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer #links {
+    display: flex;
+
+}
+
+footer a {
+    margin-left: 15px;
+}
+
+footer #copy {
+    background-color: black;
+    color: white;
+
+}
+footer #links img{
+    height:50px;
+    width:70px;
+}
+
+
+@media only screen and (max-width:1340px) {
+
+    .navigation input {
+        margin-left: 2rem;
+
+    }
+
+    body::before {
+        /* content: "";
+    background: url("images/baby.jpg") no-repeat center center/cover; */
+        /* position: absolute; */
+        height: 189vh;
+        width: 170vw;
+        /*z-index: -1;
+    opacity: 0.5; */
+
+    }
+
+    #customersupport {
+
+        font-size: 1rem;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+
+}
+
+@media only screen and (max-width:1030px) {
+    #customersupport {
+
+        font-size: 2rem;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    body::before {
+        /* content: "";
+    background: url("images/baby.jpg") no-repeat center center/cover; */
+        /* position: absolute; */
+        height: 200vh;
+        width: 120vw;
+        /*z-index: -1;
+    opacity: 0.5; */
+
+    }
+
+    .navigation ul li a {
+
+        margin-left: 2.8vw;
+
+        padding: 0rem 1vw;
+
+    }
+
+    .navigation input {
+        margin-left: 2rem;
+
+
+    }
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:850px) {
+
+    .navigation ul li a {
+
+        margin-left: 2.8vw;
+
+        padding: 0rem 1vw;
+
+    }
+
+    .navigation input {
+        margin-left: 2rem;
+
+
+    }
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:670px) {
+    body::before {
+        /* content: "";
+    background: url("images/baby.jpg") no-repeat center center/cover; */
+        /* position: absolute; */
+        height: 330vh;
+        width: 200vw;
+        /*z-index: -1;
+    opacity: 0.5; */
+
+    }
+
+    #customersupport {
+        font-size: 1.5rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    nav {
+        height: 15vh;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .navigation ul li a {
+        padding-top: 2rem;
+    }
+
+    .container h2 {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .box {
+        width: 99%;
+    }
+
+    body::before {
+        /* content: "";
+    background: url("images/baby.jpg") no-repeat center center/cover; */
+        /* position: absolute; */
+        height: 350vh;
+        width: 200vw;
+        /*z-index: -1;
+    opacity: 0.5; */
+
+    }
+
+    /* nav{
+    background-color: blue;
+} */
+
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="cb.jpg" alt="logo">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">ContactUs</a></li>
+            </ul>
+            <input type="text" id="search" name="search box" placeholder="Search">
+
+
+        </div>
+    </nav>
+    <div class="container">
+        <h2>
+            Welcome to My Online Coffee Store
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur </p>
+        <button>Order Now</button>
+    </div>
+    <section class="services">
+        <h1>OUR SERVICES</h1>
+        <div class="boxes">
+
+            <div class="box">
+                <img src="" alt="img1">
+                <h2>Coffee Bean-Arabica</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quod quasi, placeat recusandae unde id
+                    repudiandae earum. Distinctio earum fugit, quos suscipit hic aliquid possimus repellat fugiat
+                    consectetur
+                    iusto culpa ex cum. Vitae tempore accusantium voluptate rerum alias. Libero, ad?</p>
+            </div>
+            <div class="box">
+                <img src="" alt="img2">
+                <h2>Coffee Bean-Robusta</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quod quasi, placeat recusandae unde id
+                    repudiandae earum. Distinctio earum fugit, quos suscipit hic aliquid possimus repellat fugiat
+                    consectetur
+                    iusto culpa ex cum. Vitae tempore accusantium voluptate rerum alias. Libero, ad?</p>
+            </div>
+            <div class="box">
+                <img src="" alt="img3">
+                <h2>Coffee Bean-Liberica</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quod quasi, placeat recusandae unde id
+                    repudiandae earum. Distinctio earum fugit, quos suscipit hic aliquid possimus repellat fugiat
+                    consectetur
+                    iusto culpa ex cum. Vitae tempore accusantium voluptate rerum alias. Libero, ad?</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="contactUs">
+        <h1>CONTACT US</h1>
+        <div id="customersupport">
+
+            <h2>Customer Support</h2>
+
+            <h3>+91 7865453767</h3>
+            <h3>Call us: (Monday to Saturday)</h3>
+            <p><b>Timings:</b> 9:00 AM to 7:00 PM (IST)</p>
+            <h2>Sunday Closed</h2>
+
+            <h3>Whatsapp No: </h3>
+            <h3>+91 7865453767</h3>
+            <p>To consult or any information <br> (24x7 Support) </p>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Links to Social Media</p>
+        <div id="links">
+
+            <a href=""><img src="linkedin.jpg" alt="linkedin"></a>
+            <a href=""><img src="github.png" alt="github"></a>
+            <a href=""><img src="fb.jpg" alt="facebook"></a>
+            <a href=""><img src="instagram.png" alt="instagram"></a>
+        </div>
+        <p id="copy">@copyright ZeenathKousar 2021</p>
+    </footer>
+</body>
+
+</html>
