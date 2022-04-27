@@ -1,7 +1,7 @@
 const express=require('express');
 const app= express();
 const path=require('path');
-const port= process.env.PORT || 2000;
+const port= process.env.PORT || 6000;
 
 app.set('view engine','hbs');
 //console.log(path.join(__dirname,"../views/images/"));
